@@ -37,9 +37,9 @@ int solution(vector<int> &A)
         }
         
         if (intersecs > max_intersec)
-		{
-			return -1;
-		}
+        {
+            return -1;
+        }
         
     }
     return intersecs;
