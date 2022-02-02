@@ -24,10 +24,10 @@ int solution(vector<int> &A, vector<int> &B)
                 }
 
                 if (!fish_stack_upstream.empty())
-				{
-					fishes_alive += fish_stack_upstream.size();
-					fish_stack_upstream.clear();
-				}
+                {
+                    fishes_alive += fish_stack_upstream.size();
+                    fish_stack_upstream.clear();
+                }
             }
         }
 
