@@ -26,9 +26,7 @@ int solution(vector<int> &A)
             {
                 max_profit = max_value - min_value;
             }
-
         }
-
     }
 
     return max_profit > 0 ? max_profit : 0;
