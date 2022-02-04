@@ -5,12 +5,6 @@ int solution(vector<int> &A)
 
     for (unsigned int i = 1 ; i < A.size() ; i++)
     {
-
-        if (last_best_sum < 0 && A[i] > last_best_sum)
-        {
-            last_best_sum = A[i];
-        }
-
         if (current_sum < 0)
         {
             current_sum = 0;
