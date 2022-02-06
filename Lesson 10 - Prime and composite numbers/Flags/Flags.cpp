@@ -15,6 +15,7 @@ int solution(vector<int> &A)
 
             total_distance_between_peaks += distance_between_peaks;
 
+            //next cannot be peak again, so jump twice
             i++;
             distance_between_peaks = 1;
         }
