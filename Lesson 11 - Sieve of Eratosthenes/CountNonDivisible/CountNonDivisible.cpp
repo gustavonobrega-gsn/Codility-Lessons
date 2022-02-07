@@ -24,9 +24,10 @@ vector<int> solution(vector<int> &A)
         unsigned int elem = A[i];
         if (divisors_count_map.find(elem) == divisors_count_map.end())
         {
-            //start counting 1 and elements with same value
+            //start counting elements with same value
             int divisors_count = elem_count_map[elem];
 
+            //count 1's if we are not dealing with 1, as we already counted on the previous command
             if (elem != 1)
             {
                 divisors_count += elem_count_map[1];
@@ -51,8 +52,8 @@ vector<int> solution(vector<int> &A)
                     {
                         divisors_count += elem_count_map[potential_divisor_other_part];
                     }
+                }
             }
-        }
 
             divisors_count_map[elem] = divisors_count;
         }
