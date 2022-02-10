@@ -13,16 +13,7 @@ unsigned int gcd(int N, int M)
 
 int solution(int N, int M) 
 {
-    //when N > M, the answer is gonna be N / greatest_common_divisor(N, M)
-	
-    if (M > N)
-    {
-        M = M % N;
-        if (M == 0)
-        {
-            M = N;
-        }
-    }
+    //the answer is gonna be N / greatest_common_divisor(N, M)
     
     return N/gcd(N, M);
 }
