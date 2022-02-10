@@ -13,14 +13,15 @@ unsigned int gcd(int N, int M)
 
 int solution(vector<int> &A, vector<int> &B)
 {
-	int count_same_prime_divisors = 0;
+    int count_same_prime_divisors = 0;
 
-	for (unsigned int i = 0 ; i < A.size() ; i++)
-	{
+    for (unsigned int i = 0 ; i < A.size() ; i++)
+    {
         if(A[i] == 1 && B[i] == 1)
         {
             count_same_prime_divisors++;
         }
+        
         else 
         {
             unsigned int gcd_A_B = gcd(A[i],B[i]);
@@ -52,9 +53,7 @@ int solution(vector<int> &A, vector<int> &B)
                                 gcd_B = gcd(B[i],gcd_A_B);
                             }
 
-
                         }while (B[i] != 1 && gcd_B != 1);
-
                     }
                     else
                     {
